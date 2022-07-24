@@ -1,5 +1,8 @@
 # **Content**
 
+- [Getting Started](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-prereqs.html)
+- [Configuring CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+- [DynamoDB](https://github.com/davidtsai0720/tips/aws/main/dynamodb)
 - Storage
   - S3 (Simple Storage Service)
   - Glacier
