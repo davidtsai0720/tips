@@ -1,4 +1,4 @@
-# **Content**
+# **Go Channel**
 
 - [Dead Lock](#dead-lock)
 
