@@ -1,7 +1,14 @@
 # **Content**
 
+## ***Prepare***
+
 - [Getting Started](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-prereqs.html)
+- [IAM](https://us-east-1.console.aws.amazon.com/iamv2/home#/home)
+- [VPC](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
 - [Configuring CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+
+## ***Service***
+
 - [DynamoDB](https://github.com/davidtsai0720/tips/aws/main/dynamodb)
 - [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html)
 - Storage
