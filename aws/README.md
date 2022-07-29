@@ -4,7 +4,7 @@
 
 - [Getting Started](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-prereqs.html)
 - [IAM](https://us-east-1.console.aws.amazon.com/iamv2/home#/home)
-- [VPC](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
+- [VPC FOR RDS](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html)
 - [Configuring CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
 ## ***Service***
