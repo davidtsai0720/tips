@@ -10,7 +10,9 @@
 ## ***Service***
 
 - [DynamoDB](https://github.com/davidtsai0720/tips/aws/main/dynamodb)
+  -[Prepare-DynamoDB]
 - [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html)
+  - [Perpare-RDS](#perpare-rds)
 - Storage
   - S3 (Simple Storage Service)
   - Glacier
@@ -23,3 +25,12 @@
   - Iaas (Infrastructure as a Service)
   - Paas (Platform as a Service)
   - Saas (Software as a Service)
+
+### ***Prepare-DynamoDB***
+
+- user in IAM
+
+### ***Perpare-RDS***
+
+1. Go To VPC
+2. Create Security Group
