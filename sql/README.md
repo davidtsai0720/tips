@@ -7,37 +7,29 @@
 
 ```sql
 -- Filter by condition
-WITH filtered_user AS (
-    SELECT *
-    FROM users
-    WHERE gender = $1
-),
+WITH filtered_user AS (SELECT * FROM users WHERE gender = $1),
 -- 
-total_count AS (
-    SELECT COUNT(1) AS total_count FROM filtered_user
-),
+total_count AS (SELECT COUNT(1) AS total_count FROM filtered_user),
 -- Paginated
 paginated_user AS (
-    SELECT *
-    FROM filtered_user
-    ORDER BY (
-        CASE COALESCE($4, '')
-        WHEN 'male' THEN created_at
-        ELSE THEN updated_at
-        END
-    ) DESC
-    OFFSET $2 :: int
-    LIMIT $3 :: int
+SELECT *
+FROM filtered_user
+ORDER BY (
+    CASE
+    WHEN COALESCE($4, '') = 'male' THEN created_at
+    ELSE THEN updated_at END
+) DESC
+OFFSET $2 :: int
+LIMIT $3 :: int
 )
 -- Start Query
 SELECT user.*, (SELECT total_count FROM total_count) AS total_count
 FROM user
 INNER JOIN paginated_user USING(id)
 ORDER BY (
-    CASE COALESCE($4, '')
-    WHEN 'male' THEN created_at
-    ELSE THEN updated_at
-    END
+    CASE
+    WHEN COALESCE($4, '') = 'male' THEN created_at
+    ELSE THEN updated_at END
 ) DESC;
 ```
 
